@@ -1,7 +1,7 @@
 // Alpha code for GPS modules for pothole tracking.
 //
 //  December 31st 2016
-//
+////
 // put together by Pasquale Riccio
 
 /*
@@ -80,12 +80,12 @@ $GPGGA,023900.000,4503.1057,N,07523.7231,W,1,07,1.65,80.6,M,-33.9,M,,*6C
  */
 
 
-#include <Adafruit_GPS.h>
-#include <Wire.h> 
-#include <Time.h>
-#include <TimeLib.h>
-#include <fmtDouble.h>
-#include <crc8.h>
+#include "../library/Adafruit_GPS/Adafruit_GPS.h"
+#include "../library/Wire/Wire.h" 
+#include "../library/Time.h"
+#include "../library/TimeLib.h"
+#include "../library/fmtDouble.h"
+#include "../library/crc8.h"
 
 //#include <EnableInterrupt.h>
 

@@ -49,7 +49,7 @@ def leerSerial():
 	print mensaje
 	mensaje= puertoserial.readline()
 	print mensaje
-	client.publish("Json",mensaje, qos=0, retain=False)
+	client.publish("/json",mensaje, qos=0, retain=False)
 def escribirSerial():
 
 	print "leerSerial"

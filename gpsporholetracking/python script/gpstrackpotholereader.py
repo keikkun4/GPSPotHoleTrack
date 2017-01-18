@@ -13,11 +13,11 @@ def on_message(client, userdata, msg):
 
 
 MQTT_broker = "m11.cloudmqtt.com"
-MQTT_username = "qvrhcana"
-MQTT_password = "-5zfwE8o_4w7"
+MQTT_username = "miidnlzk"
+MQTT_password = "zjUYiSYadzw4"
 MQTT_topicSub = "jsonTopic"  #<---topico al que te vas a suscribir
 MQTT_topicAlive = "Conection"#topico al que le vas a decir que ya estas conectad
-MQTT_port = 14953
+MQTT_port = 10783
 MQTT_clientID = "Hackerspace"#identificador de cliente
 client = mqtt.Client(MQTT_clientID, clean_session=True, userdata=None, protocol="MQTTv311", transport="tcp")
 client.on_connect = on_connect
@@ -49,7 +49,7 @@ def leerSerial():
 	print mensaje
 	mensaje= puertoserial.readline()
 	print mensaje
-	client.publish("Json",mensaje, qos=0, retain=False)
+	client.publish("/json",mensaje, qos=0, retain=False)
 def escribirSerial():
 
 	print "leerSerial"
